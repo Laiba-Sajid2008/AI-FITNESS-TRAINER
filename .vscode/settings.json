@@ -1,0 +1,15 @@
+{
+  "python.defaultInterpreterPath": "python",
+  "python.formatting.provider": "black",
+  "editor.formatOnSave": true,
+  "editor.rulers": [88],
+  "files.associations": {
+    "*.py": "python"
+  },
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": false,
+  "python.linting.flake8Enabled": true,
+  "terminal.integrated.env.windows": {},
+  "terminal.integrated.env.linux": {},
+  "terminal.integrated.env.osx": {}
+}
