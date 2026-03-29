@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🏋️ AI Fitness Tracker
 
 > Real-time exercise detection, rep counting, and posture analysis using Computer Vision & AI.
@@ -175,3 +176,6 @@ Streamlit UI
 ---
 
 *Built with ❤️ using Python, MediaPipe & Streamlit*
+=======
+# AI-FITNESS-TRAINER
+>>>>>>> f44bd611b3b8c7871657c1146f1d0498f00a80af
