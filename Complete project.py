@@ -478,20 +478,21 @@ if st.session_state.running:
                 if show_angles:
                     detector.draw_angles(frame, landmarks, exercise)
 
-                Draw HUD ovrlay frame = draw_hud(frame, reps, sets, score, stage, exercise, target_reps, target_sets) # Calories (rough estimate) elapsed = time.time() - st.session_state.start_time st.session_state.calories = estimate_calories(exercise, reps, sets, elapsed)
-            frame_placeholder.image(frame, channels="BGR", use_container_width=True)
-            render_metrics()
-            render_feedback()
-            render_progress()
+          #Draw HUD ovrlay 
+        frame = draw_hud(frame, reps, sets, score, stage, exercise, target_reps, target_sets) # Calories (rough estimate) elapsed = time.time() - st.session_state.start_time st.session_state.calories = estimate_calories(exercise, reps, sets, elapsed)
+        frame_placeholder.image(frame, channels="BGR", use_container_width=True)
+        render_metrics()
+        render_feedback()
+        render_progress()
 
-            frame_count += 1
+        frame_count += 1
 
             # Check if session complete
-            if st.session_state.sets >= target_sets and target_sets > 0:
+        if st.session_state.sets >= target_sets and target_sets > 0:
                 st.session_state.running = False
                 st.balloons()
                 st.success(f"🎉 Session Complete! {target_sets} sets of {target_reps} {exercise} done!")
-                break
+                
 
         cap.release()
 
